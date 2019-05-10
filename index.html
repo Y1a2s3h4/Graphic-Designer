@@ -105,10 +105,33 @@
         border-radius: 50%;
         font-size: 4em;
     }
+   
+    .fa-facebook,
+    .fa-instagram,
+    .fa-twitter,
+    .fa-google-plus-g{
+       display: block;
+       font-size: 4em;
+    }
+    .fa-google-plus-g{
+color: red;
+    }
+    .fa-instagram{
+        color: rgb(205, 66, 230);
+    }
+    .fa-twitter{
+        color:#00acee;
+    }
+.fa-facebook{
+    color:#4267b2;
+}
+    /* html{
+        scroll-behavior:smooth;
+    } */
 </style>
 <body >   
     <!-- Navigation -->
-    <div class="container">
+    <div class="container" id="home">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
         <a href="#" class="navbar-brand text-success text-uppercase ">Graphics Designers</a>
@@ -116,10 +139,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarResponsive home">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">   
-                    <a href="#" class="nav-link text-success">HOME</a>
+                    <a href="#home" class="nav-link text-success">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a href="#Services" class="nav-link text-white">SERVICES</a>
@@ -128,7 +151,7 @@
                     <a href="#team" class="nav-link text-white">TEAM</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white">CONTACT</a>
+                    <a href="#CONTACT" class="nav-link text-white">CONTACT</a>
                 </li>
             </ul>
            
@@ -170,7 +193,7 @@
     </div>
     </div>
     <br>
-
+<hr class="my-4">
      <!-- Services -->
 
     <div class="container contain" id="Services">
@@ -204,7 +227,7 @@
             </div>
             </div>
         </div>
-
+<hr class="my-4">
         <!-- Team -->
         <div class="container padding team">
             <div class="row welcome text-center" id="team">
@@ -252,7 +275,56 @@
             </div>
         </div>
         </div>
-        
+        <hr class="my-4">
+
+        <!-- CONTACT  -->
+
+        <footer> 
+        <div class="container-fluid footer" id="CONTACT">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    
+                    <h3>GRAPHIC DESIGNER</h3>
+                    <div class="heading-underline"></div>
+                <div class="col-12 social padding"></div>
+                    <h5>CONNECT WITH US:</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+<script>
+   
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+});
+        </script>
+
 </body>
 </html> 
 

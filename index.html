@@ -33,6 +33,7 @@
     body{
         font-family: 'Aleo', serif;
          overflow: auto;
+         outline: none;
     } 
     #h1 {
         font-size: 4rem;
@@ -117,14 +118,28 @@
 color: red;
     }
     .fa-instagram{
-        color: rgb(205, 66, 230);
+        color: rgb(228, 74, 255);
     }
     .fa-twitter{
         color:#00acee;
     }
 .fa-facebook{
-    color:#4267b2;
+    color:#fcfcfc;
 }
+
+.footer{
+    background: url(./IMAGES/img14.jpg) no-repeat fixed center;
+    width: 100%;
+    
+}
+.dark{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.h3, .h5{
+    color: white;
+}
+
+
     /* html{
         scroll-behavior:smooth;
     } */
@@ -279,24 +294,40 @@ color: red;
 
         <!-- CONTACT  -->
 
-        <footer> 
-        <div class="container-fluid footer" id="CONTACT">
-            <div class="row text-center">
-                <div class="col-md-6">
+        
+        <div class="container-fluid footer text-uppercase text-white" id="CONTACT">
+        <!-- <img class="img-fluid fixed-img" src="./IMAGES/img10.jpg" alt=""> -->
+            <div class="row dark text-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <br>
                     
-                    <h3>GRAPHIC DESIGNER</h3>
+                    <h3 class="h3">GRAPHIC DESIGNERS</h3>
                     <div class="heading-underline"></div>
-                <div class="col-12 social padding"></div>
-                    <h5>CONNECT WITH US:</h5>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+
+                <div class="col-12 social padding">
+                    <h5 class="h5">CONNECT WITH US:</h5>
+                    <a href="#" class="blue"><i class="fab fa-facebook"></i></a>
+                    <br>
                     <a href="#"><i class="fab fa-instagram"></i></a>
+                    <br>
                     <a href="#"><i class="fab fa-twitter"></i></a>
+                    <br>
                     <a href="#"><i class="fab fa-google-plus-g"></i></a>
                 </div>
                 </div>
+<div class="col-lg-4 col-md-6 col-sm-12 ">
+    <br>
+                <h3 class="h3 text-uppercase">Our Offices</h3>
+                <div class="heading-underline"></div>
+                        <p class="display-4">Banglore</p>
+                        <p class="display-4">PUNE</p>
+                        <p class="display-4">delhi</p>
+</div>
+
+                </div>
             </div>
-        </div>
-        </footer>
+        
+       
 <script>
    
         $(document).ready(function(){

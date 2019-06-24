@@ -159,6 +159,11 @@ color: red;
         padding: .4rem .7rem;
         line-height: 1.1rem;
     }
+     .carousel-caption>.caption__wrapper{
+        position: absolute ;
+        top:-30%;
+        left: 10%;
+     }
    }
     /* html{
         scroll-behavior:smooth;

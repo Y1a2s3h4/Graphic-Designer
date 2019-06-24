@@ -135,7 +135,7 @@ color: red;
    @media (max-width: 576px) { 
     
     #typed{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
     #h1{
         font-size: 2rem;
@@ -149,14 +149,14 @@ color: red;
         font-size: 2rem !important;
     }
     .display-3{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     #h3{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     #btn{
         font-size: .7rem;
-        padding: .2rem .6rem;
+        padding: .4rem .7rem;
         line-height: 1.1rem;
     }
    }
